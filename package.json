@@ -1,0 +1,24 @@
+{
+  "name": "@amitasoft/site-shell",
+  "version": "1.0.0",
+  "description": "Framework-neutral shared AmitaSoft site header and footer",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "styles.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./styles.css": "./styles.css"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "license": "UNLICENSED",
+  "private": false
+}
