@@ -173,11 +173,11 @@ function renderHeader(options = {}) {
       ${anchor('header.desktop.about', primary.about.label, primary.about.href, 'as-shell-nav-link', currentPath)}
       <div class="as-shell-dropdown">
         ${anchor('header.desktop.products', primary.products.label, primary.products.href, 'as-shell-nav-link as-shell-dropdown-label', currentPath)}
-        <div class="as-shell-panel as-shell-products-panel">${renderProductLinks('desktop', currentPath)}</div>
+        <div id="desktop-products-menu" class="as-shell-panel as-shell-products-panel">${renderProductLinks('desktop', currentPath)}</div>
       </div>
       <div class="as-shell-dropdown">
         ${anchor('header.desktop.resources', primary.resources.label, primary.resources.href, 'as-shell-nav-link as-shell-dropdown-label', currentPath)}
-        <div class="as-shell-panel as-shell-resources-panel">${renderResourceLinks('desktop', currentPath)}</div>
+        <div id="desktop-resources-menu" class="as-shell-panel as-shell-resources-panel">${renderResourceLinks('desktop', currentPath)}</div>
       </div>
       ${anchor('header.desktop.blogs', primary.blogs.label, primary.blogs.href, 'as-shell-nav-link', currentPath)}
       ${anchor('header.desktop.contact', primary.contact.label, primary.contact.href, 'as-shell-nav-link', currentPath)}
@@ -188,8 +188,8 @@ function renderHeader(options = {}) {
       <nav class="as-shell-mobile-panel" aria-label="Mobile navigation">
         ${anchor('header.mobile.home', primary.home.label, primary.home.href, 'as-shell-mobile-link', currentPath)}
         ${anchor('header.mobile.about', primary.about.label, primary.about.href, 'as-shell-mobile-link', currentPath)}
-        <details class="as-shell-mobile-group"><summary>Products</summary><div>${renderProductLinks('mobile', currentPath)}</div></details>
-        <details class="as-shell-mobile-group"><summary>Resources</summary><div>${renderResourceLinks('mobile', currentPath)}</div></details>
+        <details class="as-shell-mobile-group"><summary>Products</summary><div id="mobile-products-menu">${renderProductLinks('mobile', currentPath)}</div></details>
+        <details class="as-shell-mobile-group"><summary>Resources</summary><div id="mobile-resources-menu">${renderResourceLinks('mobile', currentPath)}</div></details>
         ${anchor('header.mobile.blogs', primary.blogs.label, primary.blogs.href, 'as-shell-mobile-link', currentPath)}
         ${anchor('header.mobile.contact', primary.contact.label, primary.contact.href, 'as-shell-mobile-link', currentPath)}
         ${anchor('header.mobile.schedule-demo', shellManifest.header.cta.label, shellManifest.header.cta.href, 'as-shell-cta as-shell-mobile-cta', currentPath, ' data-track="schedule-demo"')}
