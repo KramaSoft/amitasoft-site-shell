@@ -7,7 +7,7 @@ const shellManifest = Object.freeze({
   header: {
     primary: [
       { key: 'home', label: 'Home', href: '/' },
-      { key: 'about', label: 'About Us', href: '/#about' },
+      { key: 'about', label: 'About Us', href: '/about' },
       { key: 'products', label: 'Products', href: '/products' },
       { key: 'resources', label: 'Resources', href: '/resources' },
       { key: 'blogs', label: 'Blogs', href: '/blog/' },
@@ -65,7 +65,7 @@ const shellManifest = Object.freeze({
         heading: 'Company',
         links: [
           { key: 'home', label: 'Home', href: '/' },
-          { key: 'about', label: 'About Us', href: '/#about' },
+          { key: 'about', label: 'About Us', href: '/about' },
           { key: 'blogs', label: 'Blogs', href: '/blog/' },
           { key: 'contact', label: 'Contact Us', href: '/contact-us' },
         ],

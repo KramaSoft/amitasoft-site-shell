@@ -4,7 +4,9 @@ Status: Implemented and live on the AmitaSoft main site and blog.
 
 Implementation package: `@amitasoft/site-shell`
 
-Approved implementation commit: `4f97f2945274c059b68f364323bdd574e5c2b6e7`
+Initial implementation commit: `4f97f2945274c059b68f364323bdd574e5c2b6e7`
+
+Current contract version: the commit containing this file.
 
 This document is the content contract for the shared header and footer. The executable manifest lives in `index.js`. Main-site and blog adapters must consume that package rather than copy this content.
 
@@ -13,7 +15,7 @@ This document is the content contract for the shared header and footer. The exec
 Primary navigation, in order:
 
 1. Home: `/`
-2. About Us: `/#about`
+2. About Us: `/about`
 3. Products: `/products`
 4. Resources: `/resources`
 5. Blogs: `/blog/`
@@ -55,7 +57,7 @@ Tagline: Building infinite trust + intelligent infrastructure
 Company column, in order:
 
 1. Home: `/`
-2. About Us: `/#about`
+2. About Us: `/about`
 3. Blogs: `/blog/`
 4. Contact Us: `/contact-us`
 
